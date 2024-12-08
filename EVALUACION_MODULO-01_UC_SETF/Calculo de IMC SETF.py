@@ -85,14 +85,14 @@ def capturadatos_generales():
             
 
     while True:
-        operacion = float(pesokilos/estaturapersona/estaturapersona) #Operación de calculo del IMC a partir de datos almacenados anteriormente.
+        operacion = float(pesokilos/(estaturapersona*estaturapersona)) #Operación de calculo del IMC a partir de datos almacenados anteriormente.
         imc = operacion #Vinculación entre variables para determinar clasificación del IMC.
         print ('Muchas gracias por tomarte el tiempo para llenar este formulario.')
         print ('Te presento todos datos que ingresaste hasta ahora y su respectivo Índice de Masa Corporal.')
         print ('El Índice de Masa Corporal ofrecido a continuación es solo un marcador matemático simple.')
         print ('Por favor consulta a tu médico de cabecera para revisar a profundidad estado de salud.')
         print ('--------------------------------------------------------------') #Total de datos capturados en una misma operación del programa.
-        print ('Nombre: ',nombrecompleto,' |  Edad: ',edadpersona,'años\nPeso: ',pesokilos,'kilogramos  |  Estatura: ',estaturapersona,'metros  |  IMC:',operacion,'')
+        print ('Nombre: ',nombrecompleto,' |  Edad: ',edadpersona,'años\nPeso: ',round(pesokilos,2),'kilogramos  |  Estatura: ',round(estaturapersona,2),'metros  |  IMC:',round(operacion,2),'')
         print ('--------------------------------------------------------------')
         print ('El Índice de Masa Corporal se obtiene con la operación peso(kg)/estatura(m)**2 = IMC.')
         if edadpersona <= 11 and imc < 13.10: #Inicio de posibles resultados y clasificaciones de IMC para menor y mayor de edad.
