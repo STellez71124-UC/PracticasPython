@@ -85,7 +85,7 @@ def capturadatos_generales():
             
 
     while True:
-        operacion = round(pesokilos/estaturapersona/estaturapersona) #Operación de calculo del IMC a partir de datos almacenados anteriormente.
+        operacion = float(pesokilos/estaturapersona/estaturapersona) #Operación de calculo del IMC a partir de datos almacenados anteriormente.
         imc = operacion #Vinculación entre variables para determinar clasificación del IMC.
         print ('Muchas gracias por tomarte el tiempo para llenar este formulario.')
         print ('Te presento todos datos que ingresaste hasta ahora y su respectivo Índice de Masa Corporal.')
