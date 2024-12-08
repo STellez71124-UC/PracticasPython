@@ -90,7 +90,7 @@ def capturadatos_generales():
         print ('Muchas gracias por tomarte el tiempo para llenar este formulario.')
         print ('Te presento todos datos que ingresaste hasta ahora y su respectivo Índice de Masa Corporal.')
         print ('El Índice de Masa Corporal ofrecido a continuación es solo un marcador matemático simple.')
-        print ('Por favor consulta a tu médico de cabecera para revisar a profundidad tu cuerpo y estado de salud.')
+        print ('Por favor consulta a tu médico de cabecera para revisar a profundidad estado de salud.')
         print ('--------------------------------------------------------------') #Total de datos capturados en una misma operación del programa.
         print ('Nombre: ',nombrecompleto,' |  Edad: ',edadpersona,'años\nPeso: ',pesokilos,'kilogramos  |  Estatura: ',estaturapersona,'metros  |  IMC:',operacion,'')
         print ('--------------------------------------------------------------')
