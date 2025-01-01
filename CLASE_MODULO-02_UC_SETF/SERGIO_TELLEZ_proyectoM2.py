@@ -7,11 +7,11 @@ text_valid = 0 #Contador de palabras.
 while text_valid <6: #Limite para ingresar seis palabras.
     palabra = input(f'Palabra {text_valid+1}: ') #Ingreso de datos que se modifica con cada validación de texto.
     if palabra.isalpha() and len(palabra) < 4: #Verificar si es palabra con menos de 4 letras.
-        print ('Hacen falta letras. Solo tiene', len(palabra), 'letras')
+        print ('Hacen falta letras. Solo tiene', len(palabra), 'letras.')
     elif palabra.isalpha() and len(palabra) > 8: #Verificar si es palabra con mayor de 8 letras.
-        print ('Sobran letras. Tiene', len(palabra), 'letras')
+        print ('Sobran letras. Tiene', len(palabra), 'letras.')
     elif palabra.isalpha() and len(palabra) >= 4 <= 8: #Verificar si es palabra dentro de rango aceptable (4-8 letras).
-        print ('Gracias. Ya guarde tu respuesta.')
+        print ('Tiene', len(palabra), 'letras. Se ha guardado tu respuesta.')
         text_lista.append(palabra) #Palabra es agregada a lista.
         text_valid +=1 #Suma de valor 1 por cada palabra guardada y reconocida.
     elif palabra.isnumeric(): #Rechazo de números como dato valido para ejecución del programa.
